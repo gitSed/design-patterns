@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observer Pattern</title>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h1>Basic implementation</h1>
+    <br />
+    <br />
+    <span style="display: flex; flex-direction: column; max-width: 250px">
+      <label for="subject">Subject will notify when input value changes</label>
+      <input id="subject" type="text" oninput="change(this)" />
+    </span>
+
+    <p>Observers:</p>
+
+    <ul>
+      <li>Observer 1: <span id="ob1"></span></li>
+      <li>Observer 2: <span id="ob2"></span></li>
+    </ul>
+  </body>
+</html>
