@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observer Pattern</title>
+  </head>
+  <body>
+    <h1>HTML element observer</h1>
+    <br />
+    <br />
+    <span style="display: flex; flex-direction: column; max-width: 250px">
+      <label for="subject">
+        On 'Enter' click, subjet will notify the observers
+      </label>
+      <div style="display: flex">
+        <input id="subject" type="text" />
+        <button onclick="addEntry()">Add</button>
+      </div>
+    </span>
+
+    <p>List Observers:</p>
+
+    <div style="width: 100%; display: flex; gap: 5rem">
+      <div id="observer1">
+        <h3 style="margin: 5px 0">List 1</h3>
+        <button aria-label="subscribe">Subscribe</button>
+        <button aria-label="unsubscribe">Unsubscribe</button>
+        <section>
+          <ul></ul>
+        </section>
+      </div>
+      <div id="observer2">
+        <h3 style="margin: 5px 0">List 2</h3>
+        <button aria-label="subscribe">Subscribe</button>
+        <button aria-label="unsubscribe">Unsubscribe</button>
+        <section>
+          <ul></ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="./observer.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
